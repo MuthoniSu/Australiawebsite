@@ -1,4 +1,4 @@
-﻿import { useState } from "react";
+import { useState } from "react";
 import { supabase } from "../utils/supabaseClient";
 import Swal from "sweetalert2";
 import "sweetalert2/dist/sweetalert2.min.css";
@@ -50,8 +50,7 @@ export default function JobDetail() {
     const saveApplication = async () => {
         try {
             setSaving(true);
-            setError("");
-
+            console.log("Supabase URL present:", !!import.meta.env.VITE_SUPABASE_URL);
             const fullPhone = `${formData.countryCode}${formData.phone}`;
 
             // Check for existing email or phone
@@ -62,8 +61,8 @@ export default function JobDetail() {
                 .maybeSingle();
 
             if (fetchError) {
-                console.error("Fetch error:", fetchError);
-                setError("Verification failed. Please try again.");
+                console.error("Supabase check error:", fetchError);
+                setError(`Verification failed: ${fetchError.message || "Unknown error"}. Please check console.`);
                 setSaving(false);
                 return null;
             }
