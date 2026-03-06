@@ -2,7 +2,11 @@
 import { createClient } from "@supabase/supabase-js";
 
 // These come from your Supabase dashboard
-const SUPABASE_URL = "https://gbotwkyaagcffzvcyzuy.supabase.co";
-const SUPABASE_ANON_KEY = "sb_publishable_Egi9rMCDbL0BP6R9Mbh_0Q_LxEHau5r";
+const SUPABASE_URL = import.meta.env.VITE_SUPABASE_URL;
+const SUPABASE_ANON_KEY = import.meta.env.VITE_SUPABASE_ANON_KEY;
 
-export const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+if (!SUPABASE_URL || !SUPABASE_ANON_KEY) {
+  console.error("Supabase environment variables are missing! Make sure VITE_SUPABASE_URL and VITE_SUPABASE_ANON_KEY are set in your .env file or Vercel dashboard.");
+}
+
+export const supabase = createClient(SUPABASE_URL || "", SUPABASE_ANON_KEY || "");
