@@ -82,7 +82,7 @@ export default function JobDetail() {
                     title: "Duplicate Application",
                     text: message,
                     icon: "warning",
-                    confirmButtonColor: "#003366"
+                    confirmButtonColor: "#8B1F2E"
                 });
 
                 setSaving(false);
@@ -179,7 +179,7 @@ export default function JobDetail() {
                             <div style="
                                 font-size:18px;
                                 font-weight:bold;
-                                color:#003366;
+                                color:#8B1F2E;
                                 margin-top:5px;
                                 word-break:break-word;
                             ">
@@ -195,7 +195,7 @@ export default function JobDetail() {
                 icon: "success",
                 showCancelButton: true,
                 confirmButtonText: "Check Status",
-                confirmButtonColor: "#003366",
+                confirmButtonColor: "#8B1F2E",
                 cancelButtonColor: "#6c757d",
                 width: "95%",
                 maxWidth: "420px",
@@ -249,7 +249,7 @@ export default function JobDetail() {
                     </div>
 
                     <div className="form-group">
-                        <label>Are you prepared to relocate to the Federal Republic of Germany upon successful issuance of a Work Visa? *</label>
+                        <label>Are you prepared to relocate upon successful issuance of a Work Visa? *</label>
                         <select onChange={(e) => handleAnswer("q2", e.target.value)}>
                             <option value="">Select</option>
                             <option>Yes</option>
@@ -258,7 +258,7 @@ export default function JobDetail() {
                     </div>
 
                     <div className="form-group">
-                        <label>English or German proficiency? *</label>
+                        <label>English language proficiency? *</label>
                         <select onChange={(e) => handleAnswer("q3", e.target.value)}>
                             <option value="">Select</option>
                             <option>Yes</option>

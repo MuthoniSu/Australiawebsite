@@ -19,13 +19,13 @@ export default function Navbar() {
 
                 {/* BRAND */}
                 <Link to="/" className="navbar-brand">
-                    <img
-                        src="/kenya-gov-logo.png"
-                        alt="Germany Kenya Job Portal Logo"
-                        className="nav-logo"
+                    <img 
+                        src="/australia-flag.png" 
+                        alt="Australia Flag" 
+                        className="flag-logo"
                     />
                     <span className="brand-text">
-                        Germany–Kenya
+                        Australia
                         <small>Job Portal</small>
                     </span>
                 </Link>

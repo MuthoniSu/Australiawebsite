@@ -1,6 +1,6 @@
 /* Footer Base */
 .footer {
-    background-color: #0f2a3f; /* government blue */
+    background-color: #8B1F2E;
     color: #e4edf5;
     font-size: 0.95rem;
     margin-top: 4rem;
@@ -8,7 +8,7 @@
 
 /* Top Authority Strip */
 .footer-authority {
-    background-color: #002244;
+    background-color: #6B1823;
     color: #ffffff;
     text-align: center;
     padding: 0.8rem 1rem;
@@ -38,7 +38,7 @@
     font-weight: bold;
     margin-bottom: 1.2rem;
     color: #ffffff;
-    border-left: 4px solid #ffcc00; /* Germany gold accent */
+    border-left: 4px solid #A41E34; /* Australia maroon accent */
     padding-left: 0.75rem;
 }
 
@@ -64,13 +64,30 @@
 }
 
     .gov-logo img {
+        display: block;
         height: 60px;
         margin-bottom: 0.3rem;
         border: 1px solid #ffffff30;
         padding: 4px;
         border-radius: 6px;
-        background-color: #0f2a3f;
+    background-color: #8B1F2E;
     }
+
+.footer-flag-image {
+    height: 60px;
+    object-fit: contain;
+    margin-bottom: 0.3rem;
+    border: 1px solid #ffffff30;
+    padding: 4px;
+    border-radius: 6px;
+    background-color: #8B1F2E;
+}
+
+.logo-text {
+    display: none;
+    font-size: 2.5rem;
+    line-height: 1;
+}
 
 .gov-name {
     font-size: 0.75rem;
@@ -80,6 +97,7 @@
 }
 
 .logo-divider {
+    display: none;
     font-weight: bold;
     font-size: 1.2rem;
     color: #ffffffaa;
@@ -122,13 +140,14 @@
 .footer-ecitizen {
     margin-top: 1.5rem;
     padding: 1rem;
-    border: 1px solid #1f3f5b;
-    background-color: #0c2234;
+    border: 1px solid #A41E34;
+    background-color: #6B1823;
     border-radius: 4px;
     text-align: center;
 }
 
     .footer-ecitizen img {
+        display: none;
         height: 60px;
         margin-bottom: 0.5rem;
     }
@@ -140,10 +159,10 @@
 
 /* Bottom Section */
 .footer-bottom {
-    border-top: 1px solid #1f3f5b;
+    border-top: 1px solid #A41E34;
     text-align: center;
     padding: 1.5rem 1rem;
-    background-color: #0c2234;
+    background-color: #6B1823;
 }
 
     .footer-bottom p {

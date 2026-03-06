@@ -6,31 +6,30 @@ export default function Footer() {
 
             {/* Top Authority Strip */}
             <div className="footer-authority">
-                <span className="flag">🇰🇪</span>
-                Official Bilateral Cooperation Portal • Republic of Kenya ↔ Federal Republic of Germany
-                <span className="flag">🇩🇪</span>
+                <span className="flag">�🇺</span>
+                Official Australia Immigration Portal
+                <span className="flag">🇦🇺</span>
             </div>
 
             <div className="footer-inner">
 
                 {/* About Section */}
                 <div className="footer-section footer-about">
-                    <h4>Germany–Kenya Immigration Portal</h4>
+                    <h4>Australia Immigration Portal</h4>
                     <p>
                         This official portal facilitates transparent and secure
-                        recruitment of Kenyan professionals for verified employment
-                        opportunities in Germany.
+                        recruitment of professionals for verified employment
+                        opportunities in Australia.
                     </p>
 
                     <div className="footer-logos">
                         <div className="gov-logo">
-                            <img src="/kenya-gov-logo.png" alt="Government of Kenya" title="Government of Kenya" />
-                            <span className="gov-name">Government of Kenya</span>
-                        </div>
-                        <span className="logo-divider">↔</span>
-                        <div className="gov-logo">
-                            <img src="/germany-federal-logo.png" alt="Federal Republic of Germany" title="Federal Republic of Germany" />
-                            <span className="gov-name">Federal Republic of Germany</span>
+                            <img 
+                                src="/australia-flag.png" 
+                                alt="Australia Flag" 
+                                className="footer-flag-image"
+                            />
+                            <span className="gov-name">Australia</span>
                         </div>
                     </div>
                 </div>
@@ -60,12 +59,11 @@ export default function Footer() {
                 {/* Contact */}
                 <div className="footer-section footer-contact">
                     <h4>Official Contact</h4>
-                    <p><strong>Email:</strong> keinfoimmigration@yahoo.com</p>
-                    <p><strong>WhatsApp Number:</strong> +254 737 872 584</p>
-                    <p><strong>Office:</strong> Nairobi, Kenya</p>
+                    <p><strong>Email:</strong> info@australiaimmigration.com</p>
+                    <p><strong>Phone:</strong> +61 2 XXXX XXXX</p>
+                    <p><strong>Office:</strong> Australia</p>
 
                     <div className="footer-ecitizen">
-                        <img src="/kenya-gov-logo.png" alt="Immigration Portal" />
                         <p>Verified via Official Government Channels</p>
                     </div>
                 </div>
@@ -74,9 +72,9 @@ export default function Footer() {
 
             {/* Bottom Section */}
             <div className="footer-bottom">
-                <p>© 2026 Germany–Kenya Immigration Portal. All Rights Reserved.</p>
+                <p>© 2026 Australia Immigration Portal. All Rights Reserved.</p>
                 <p>
-                    This platform operates in cooperation with relevant Kenyan and German authorities.
+                    This platform is dedicated to facilitating employment opportunities for qualified professionals.
                 </p>
             </div>
 

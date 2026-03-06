@@ -37,8 +37,7 @@ export default function Jobs() {
     }, []);
 
     const countryFlags = {
-        Germany: '🇩🇪',
-        Kenya: '🇰🇪',
+        Australia: '🇦🇺',
     };
 
     if (loading) {
@@ -66,8 +65,8 @@ export default function Jobs() {
     return (
         <div className="jobs">
             <div className="jobs-header">
-                <h2>Open Positions in Germany</h2>
-                <p>Browse {jobs.length} opportunities for qualified Kenyan professionals</p>
+                <h2>Open Positions in Australia</h2>
+                <p>Browse {jobs.length} opportunities for qualified Australian professionals</p>
             </div>
 
             {error && <div className="error-message">{error}</div>}

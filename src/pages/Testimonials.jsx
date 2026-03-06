@@ -10,14 +10,14 @@ export default function Testimonials() {
             id: 7,
             name: "David Kimani",
             date: "2026-03-04",
-            story: "Just received my visa approval today! The level of professionalism and support from this team is unmatched. I'll be flying to Hamburg next month!",
+            story: "Just received my visa approval today! The level of professionalism and support from this team is unmatched. I'll be flying to my new opportunity next month!",
             imageUrl: ""
         },
         {
             id: 8,
             name: "Sarah Wangari",
             date: "2026-03-02",
-            story: "The interview prep was the key for me. I felt so confident during my interview with the German employer. I'm officially a tech lead in Stuttgart now!",
+            story: "The interview prep was the key for me. I felt so confident during my interview with the employer. I'm officially a tech lead now!",
             imageUrl: ""
         },
         {
@@ -31,21 +31,21 @@ export default function Testimonials() {
             id: 10,
             name: "Lydia Moraa",
             date: "2026-02-26",
-            story: "Moving to Germany as a nurse seemed like a mountain, but this community made it a smooth walk. I'm now settled in Berlin and loving the city!",
+            story: "Moving to pursue a career seemed like a mountain, but this community made it a smooth walk. I'm now settled and loving the opportunity!",
             imageUrl: ""
         },
         {
             id: 1,
             name: "John Mwangi",
             date: "2025-03-15",
-            story: "Thanks to this program, I secured a nursing job in Berlin within 6 months. The support throughout the visa process was incredible!",
+            story: "Thanks to this program, I secured a nursing job within 6 months. The support throughout the visa process was incredible!",
             imageUrl: ""
         },
         {
             id: 2,
             name: "Grace Achieng",
             date: "2025-05-10",
-            story: "I never thought working in Germany was possible until I joined this community. Now I’m happily employed in Munich!",
+            story: "I never thought working abroad was possible until I joined this community. Now I'm happily employed!",
             imageUrl: ""
         },
         {
@@ -59,14 +59,14 @@ export default function Testimonials() {
             id: 4,
             name: "Faith Wanjiru",
             date: "2025-07-01",
-            story: "Professional, supportive, and reliable. I’m now working in Frankfurt and living my dream.",
+            story: "Professional, supportive, and reliable. I'm now working internationally and living my dream.",
             imageUrl: ""
         },
         {
             id: 5,
             name: "Brian Kiptoo",
             date: "2024-08-12",
-            story: "Clear process, step-by-step assistance, and amazing mentorship. Germany is now my second home!",
+            story: "Clear process, step-by-step assistance, and amazing mentorship. This is now my second home!",
             imageUrl: ""
         },
         {
@@ -118,7 +118,7 @@ export default function Testimonials() {
         <section className="testimonials-container" aria-label="Client testimonials">
             <header className="testimonials-header">
                 <h2>Success Stories from Our Community</h2>
-                <p>Read inspiring stories from Kenyans who successfully landed jobs in Germany</p>
+                <p>Read inspiring stories from Australians who successfully launched their careers</p>
             </header>
 
             <div className="testimonial-cards">

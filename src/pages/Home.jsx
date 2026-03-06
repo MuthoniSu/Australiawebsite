@@ -11,15 +11,9 @@ export default function Home() {
                 backgroundPosition: 'center'
             }}>
                 <div className="hero-content">
-                    <div className="logo-section">
-                        <div className="logo-container">
-                            <span className="flag">🇰🇪</span>
-                            <h1 className="portal-heading">GERMANY-KENYA<br />PORTAL</h1>
-                            <span className="flag">🇩🇪</span>
-                        </div>
-                    </div>
+                    <h1 className="portal-heading">AUSTRALIA<br />PORTAL</h1>
                     <h2>Employment & Immigration Gateway</h2>
-                    <p>Connect with top German employers and launch your international career</p>
+                    <p>Connect with top employers and launch your international career</p>
                     <div className="hero-cta">
                         <Link to="/jobdetail" className="cta-button primary">Browse 40+ Jobs</Link>
                         <Link to="/testimonials" className="cta-button secondary">Success Stories</Link>
@@ -33,7 +27,7 @@ export default function Home() {
                     <div className="feature-card">
                         <div className="feature-icon">💼</div>
                         <h3>40+ Quality Jobs</h3>
-                        <p>Carefully curated positions from top German companies across various sectors.</p>
+                        <p>Carefully curated positions from top companies across various sectors.</p>
                     </div>
                     <div className="feature-card">
                         <div className="feature-icon">✓</div>
@@ -43,12 +37,12 @@ export default function Home() {
                     <div className="feature-card">
                         <div className="feature-icon">🌟</div>
                         <h3>30+ Success Stories</h3>
-                        <p>Read real testimonials from Kenyans who successfully landed jobs in Germany.</p>
+                        <p>Read real testimonials from Australians who successfully launched their careers.</p>
                     </div>
                     <div className="feature-card">
-                        <div className="feature-icon">🇩🇪</div>
+                        <div className="feature-icon">✓</div>
                         <h3>Verified Employers</h3>
-                        <p>Connect with legitimate German companies actively hiring international talent.</p>
+                        <p>Connect with legitimate companies actively hiring international talent.</p>
                     </div>
                 </div>
             </section>
@@ -84,7 +78,7 @@ export default function Home() {
                     </div>
                 </div>
                 <p className="intro-text">
-                    This portal is your official gateway connecting Kenyan professionals with career opportunities in Germany.
+                    This portal is your official gateway connecting Australian professionals with career opportunities.
                     Follow these simple steps to launch your international career today!
                 </p>
             </section>

@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding-top: 90px;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f4f7fb;
+    background-color: #f8fbf9;
 }
 
 /* NAVBAR WRAPPER */
@@ -13,7 +13,7 @@ body {
     left: 0;
     right: 0;
     z-index: 1000;
-    background: linear-gradient(90deg, #002b5c, #003366);
+    background: linear-gradient(90deg, #8B1F2E, #A41E34);
     backdrop-filter: blur(8px);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
 }
@@ -38,7 +38,16 @@ body {
 }
 
 .nav-logo {
+    display: none;
+}
+
+.flag-emoji {
+    display: none;
+}
+
+.flag-logo {
     height: 50px;
+    object-fit: contain;
 }
 
 .brand-text {
@@ -79,7 +88,7 @@ body {
         height: 2px;
         left: 0;
         bottom: -6px;
-        background: #ffd700;
+        background: #A41E34;
         transition: 0.3s ease;
     }
 
@@ -89,8 +98,8 @@ body {
 
 /* CTA BUTTON */
 .navbar-cta {
-    background-color: #ffd700;
-    color: #002b5c;
+    background-color: #A41E34;
+    color: white;
     padding: 0.6rem 1.2rem;
     border-radius: 6px;
     font-weight: 600;
@@ -99,7 +108,7 @@ body {
 }
 
     .navbar-cta:hover {
-        background-color: #ffc400;
+        background-color: #7a1929;
         transform: translateY(-2px);
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     }
@@ -149,7 +158,7 @@ body {
         top: 80px;
         right: 20px;
         flex-direction: column;
-        background: #003366;
+        background: #8B1F2E;
         padding: 1.5rem;
         border-radius: 8px;
         gap: 1.5rem;
