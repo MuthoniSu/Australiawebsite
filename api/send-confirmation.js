@@ -11,6 +11,11 @@ export default async function handler(req, res) {
     return res.status(400).json({ error: 'Missing email or application number' });
   }
 
+  if (!process.env.EMAIL_USER || !process.env.EMAIL_PASS) {
+    console.error("Missing EMAIL_USER or EMAIL_PASS in server environment variables!");
+    return res.status(500).json({ error: 'Mail server credentials are not configured in Vercel' });
+  }
+
   // Use robust settings for cloud environments (Port 587 is more reliable than 465)
   const transporter = nodemailer.createTransport({
     host: 'smtp.gmail.com',
