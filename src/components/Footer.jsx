@@ -73,7 +73,6 @@ export default function Footer() {
             {/* Bottom Section */}
             <div className="footer-bottom">
                 <p>© 2026 Australia Immigration Portal. All Rights Reserved.</p>
-                <p style={{ fontSize: '10px', opacity: 0.5 }}>Build: 2026-03-06-V3</p>
                 <p>
                     This platform is dedicated to facilitating employment opportunities for qualified professionals.
                 </p>
