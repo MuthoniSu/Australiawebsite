@@ -60,7 +60,7 @@ export default function Footer() {
                 <div className="footer-section footer-contact">
                     <h4>Official Contact</h4>
                     <p><strong>Email:</strong> info@australiaimmigration.com</p>
-                    <p><strong>Phone:</strong> +61 2 XXXX XXXX</p>
+                    <p><strong>Phone:</strong> +61 6728288728</p>
                     <p><strong>Office:</strong> Australia</p>
 
                     <div className="footer-ecitizen">
