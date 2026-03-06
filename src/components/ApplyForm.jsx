@@ -18,11 +18,14 @@ export default function ApplyForm({ jobId }) {
     const appNumber = `APP-${Math.floor(100000 + Math.random() * 900000)}`;
 
     try {
+      console.log("Starting application submission...");
+      console.log("Supabase URL detected:", !!import.meta.env.VITE_SUPABASE_URL);
+
       if (!supabase || !import.meta.env.VITE_SUPABASE_URL) {
-        throw new Error("Supabase is not configured. Check environment variables.");
+        throw new Error("Supabase is not configured. Check environment variables (VITE_ prefix).");
       }
 
-      const { error } = await supabase.from('applications').insert([{
+      const { data, error, status: responseStatus } = await supabase.from('applications').insert([{
         application_number: appNumber,
         email,
         phone,
@@ -32,17 +35,24 @@ export default function ApplyForm({ jobId }) {
         status: 'Pending'
       }]);
 
+      console.log("Supabase response status:", responseStatus);
+
       if (error) {
         console.error("Supabase Insertion Error:", error);
         throw error;
       }
       
+      console.log("Supabase insert succeeded. Triggering email...");
+
       // Still trigger the email API independently if it exists
       fetch('/api/send-confirmation', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email, applicationNumber: appNumber }),
-      }).catch(err => console.error("Email API slightly failed, but DB saved:", err));
+      })
+      .then(r => r.json())
+      .then(res => console.log("Email API Response:", res))
+      .catch(err => console.error("Email API fetch failed:", err));
 
       setStatus('sent');
     } catch (err) {
