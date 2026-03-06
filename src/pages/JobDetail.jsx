@@ -54,11 +54,10 @@ export default function JobDetail() {
             const fullPhone = `${formData.countryCode}${formData.phone}`;
 
             // Check for existing email or phone
-            const { data: existingApp, error: fetchError } = await supabase
+            const { data: existingApps, error: fetchError } = await supabase
                 .from("applications")
                 .select("email, phone")
-                .or(`email.eq.${formData.email},phone.eq.${fullPhone}`)
-                .maybeSingle();
+                .or(`email.eq.${formData.email},phone.eq.${fullPhone}`);
 
             if (fetchError) {
                 console.error("Supabase check error:", fetchError);
@@ -67,7 +66,8 @@ export default function JobDetail() {
                 return null;
             }
 
-            if (existingApp) {
+            if (existingApps && existingApps.length > 0) {
+                const existingApp = existingApps[0];
                 let message = "";
                 if (existingApp.email === formData.email && existingApp.phone === fullPhone) {
                     message = "An application with this email and phone number already exists.";
